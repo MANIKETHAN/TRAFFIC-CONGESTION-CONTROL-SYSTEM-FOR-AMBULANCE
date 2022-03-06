@@ -14,21 +14,15 @@ const	int	L1G=16;	////////////////L1-GREEN
 const	int	L1O=15;	////////////////L1-ORANGE
 const	int	L1R=14;	////////////////L1-RED
 
-const	
-int	
-L2G=17;	////////////////L2-GREEN
+const	int	L2G=17;	////////////////L2-GREEN
 const	int	L2O=18;	////////////////L2-ORANGE
 const	int	L2R=19;	////////////////L2-RED
 
-const	
-int	
-L3G=8;	////////////////L3-GREEN
+const	int	L3G=8;	////////////////L3-GREEN
 const	int	L3O=9;	////////////////L3-ORANGE
 const	int	L3R=10;	////////////////L3-RED
 
-const	
-int	
-L4G=11;	////////////////L4-GREEN
+const	int	L4G=11;	////////////////L4-GREEN
 const	int	L4O=12;	////////////////L4-ORANGE
 const	int	L4R=13;	////////////////L4-RED
 int aa=0; void setup()
@@ -87,11 +81,14 @@ digitalWrite(L1G, HIGH); digitalWrite(L1O, LOW); delay(500);
 
 digitalWrite(L1O, HIGH); digitalWrite(L1R, LOW);
 
-/// second LANE digitalWrite(L2R, HIGH); digitalWrite(L2G, LOW); digitalWrite(L1R, LOW); digitalWrite(L3R, LOW);
-digitalWrite(L4R, LOW);delay(1000); digitalWrite(L2G, HIGH); digitalWrite(L2O, LOW);delay(500); digitalWrite(L2O, HIGH); digitalWrite(L2R, LOW);
+/// second LANE
+digitalWrite(L2R, HIGH); digitalWrite(L2G, LOW); digitalWrite(L1R, LOW); digitalWrite(L3R, LOW);
+
+ digitalWrite(L4R, LOW);delay(1000); digitalWrite(L2G, HIGH); digitalWrite(L2O, LOW);delay(500); digitalWrite(L2O, HIGH); digitalWrite(L2R, LOW);
  
 /// third LANE
 digitalWrite(L3R, HIGH); digitalWrite(L3G, LOW); digitalWrite(L2R, LOW); digitalWrite(L1R, LOW); digitalWrite(L4R, LOW); delay(1000); digitalWrite(L3G, HIGH); digitalWrite(L3O, LOW); delay(500); digitalWrite(L3O, HIGH); digitalWrite(L3R, LOW);
+
 /// Fourth LANE 
 digitalWrite(L4R, HIGH); digitalWrite(L4G, LOW); digitalWrite(L2R, LOW); digitalWrite(L3R, LOW);
 digitalWrite(L1R, LOW);delay(1000); digitalWrite(L4G, HIGH); digitalWrite(L4O, LOW); delay(500);
